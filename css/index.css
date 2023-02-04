@@ -1,0 +1,102 @@
+/* External css for index page  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/background/index.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#first {
+    display: block;
+    /* transition-property: transform;
+    transition-duration: 2sec;
+    transition-timing-function: ease-in-out;
+    transition-delay: 1sec;
+    transform: translateY(0%); */
+}
+
+.row {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-left: 5%;
+}
+
+.col {
+    flex-basis: 50%;
+}
+
+.container h1 {
+    color: white;
+    font-size: 100px;
+}
+
+.container p {
+    color: white;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.container button {
+    width: 130px;
+    height: 20px;
+    color: #000;
+    font-size: 12px 0;
+    background-image: linear-gradient(#c5299bff, rgba(187, 45, 185, 0.519));
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+
+.card {
+    color: white;
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-color: #000;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card1 {
+    background-image: url(../images/Icon/blog.png);
+}
+
+.card2 {
+    background-image: url(../images/Icon/shop.png);
+}
+
+.card3 {
+    background-image: url(../images/Icon/care.png);
+}
+
+.card4 {
+    background-image: url(../images/Icon/research.png);
+}
+
+.card5 {
+    background-image: url(../images/Icon/events.png);
+}
+
+.card6 {
+    background-image: url(../images/Icon/about.jpg);
+}

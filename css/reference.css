@@ -1,0 +1,130 @@
+/* css for reference page  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 100px auto;
+}
+
+.container h3 {
+    text-align: center;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.reference-odd {
+    margin-right: 10%;
+    text-align: right;
+}
+
+.reference-even {
+    margin-right: 10%;
+    text-align: left;
+    border: 0;
+    border-radius: 12px;
+}
+
+.reference-even p {
+    text-align: left;
+
+}
+
+.bonsaiempire {
+    background-image: url("../images/backgroundref/bonsaiempire.png");
+    height: 150px;
+    background-size: 100%;
+}
+
+.informatics {
+    background-image: url("../images/backgroundref/informatics.png");
+    height: 150px;
+    background-size: 100%;
+}
+
+.daraz {
+    background-image: url("../images/backgroundref/daraz.png");
+    height: 150px;
+    background-size: 100%;
+}
+
+.blue-protocol {
+    background-image: url("../images/backgroundref/blueprotocol.png");
+    height: 150px;
+    background-size: 100%;
+}
+
+.counter-side {
+    background-image: url("../images/backgroundref/counterside.png");
+    height: 150px;
+    background-size: 100%;
+}
+
+.flipkart {
+    background-image: url("../images/backgroundref/flipkart.png");
+    height: 150px;
+    background-size: 100%;
+}
+
+.walmart {
+    background-image: url("../images/backgroundref/walmart.png");
+    height: 150px;
+    background-size: 100%;
+}
+
+.sastodeal {
+    background-image: url("../images/backgroundref/sastodeal.png");
+    height: 150px;
+    background-size: 100%;
+}
+
+.dribbble {
+    background-image: url("../images/backgroundref/dribble.png");
+    height: 150px;
+    background-size: 100%;
+}
+
+.canva {
+    background-image: url("../images/backgroundref/canva.png");
+    height: 150px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.happyhues {
+    background-image: url("../images/backgroundref/happyhues.png");
+    height: 150px;
+    background-size: 100%;
+}
+
+.colorhunt {
+    background-image: url("../images/backgroundref/colorhunt.png");
+    height: 150px;
+    background-size: 100%;
+}
+
+.coolers {
+    background-image: url("../images/backgroundref/coolers.png");
+    height: 150px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.reference-even {
+    font-family: Garamond, serif;
+}
+
+.reference-odd {
+    font-family: Garamond, serif;
+}

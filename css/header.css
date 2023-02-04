@@ -1,0 +1,114 @@
+ /* CSS for navbar */
+ .nav {
+     grid-column: span 3;
+     display: flex;
+     height: 150px;
+ }
+
+ .navbar {
+     /* border: 2px solid; */
+     display: flex;
+     flex-direction: column;
+     height: 165px;
+     width: 100%;
+     color: #454545;
+     background-color: #fec7d7;
+ }
+
+ .navbar-logo {
+     width: 120px;
+     height: 110px;
+ }
+
+ .navbar .box1 {
+     display: flex;
+ }
+
+ .navbar .box1 input {
+     margin: 35px 40px 35px 400px;
+     width: 460px;
+ }
+
+ .navbar .box1 button {
+     margin: 35px -30px;
+     width: 100px;
+     background-color: #0e172c;
+     color: #fffffe;
+     cursor: pointer;
+ }
+
+ .navbar .box2 {
+     margin: 7px 0px;
+     padding: 0px 285px;
+ }
+
+ .navbar .box2 ul li {
+     display: inline-block;
+ }
+
+ .navbar .box2 ul li a {
+     text-decoration: none;
+     padding: 15px 60px;
+     color: #0e172c;
+ }
+
+ .navbar .box2 ul li a:hover {
+     color: #fffffe;
+     background-color: #0e172c;
+ }
+
+ .navbar ul {
+     font-family: Arial, Helvetica, sans-serif;
+     font: 50px;
+ }
+
+ .material-symbols-outlined {
+     top: 35%;
+ }
+
+ .icon {
+     position: relative;
+     left: 17%;
+     top: 18%
+ }
+
+ .nav {
+     position: sticky;
+     top: 0px;
+     z-index: 1;
+ }
+
+ /* CSS for boxes */
+ .fiBox {
+     grid-column: span 3;
+     height: 400px;
+ }
+
+ .secBox {
+     grid-column: span 2;
+     height: 590px;
+     padding: 0px 100px;
+     font-size: 20px;
+ }
+
+ .thBox img {
+     width: 100%;
+     margin: 70px 0px;
+     box-shadow: 2px 3px 4px pink;
+     box-shadow: 8px 6px 67px black;
+ }
+
+ .fthBox {
+     grid-column: span 2;
+     height: 160px;
+ }
+
+ .sthBox {
+     grid-column: span 3;
+     height: 30px;
+ }
+
+ .navbar .box2 ul li .active {
+     color: #fffffe;
+     background-color: #0e172c;
+ }

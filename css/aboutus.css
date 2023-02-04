@@ -1,0 +1,229 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+/* css for the whole container  */
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    justify-content: space-between;
+}
+
+/* end of container css */
+
+/* css for vertical tab  */
+.upper {
+    width: 100%;
+    background-color: #f1e4e2;
+    padding: 40px 50px 40px 40px;
+    margin: 50px 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 2px rgb(205 183 183);
+}
+
+.upper .main-title {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.upper .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.upper .content .list {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100px;
+    margin-right: 50px;
+}
+
+.content .list label {
+    height: 60px;
+    border-radius: 10px;
+    padding: 0px 20px;
+    margin: 10px 0px;
+    font-size: 22px;
+    line-height: 60px;
+    font-weight: 500;
+    cursor: pointer;
+    z-index: 12;
+}
+
+.content .list label:hover {
+    color: rgb(128, 64, 64);
+}
+
+#prabal:checked~.list .prabal,
+#prabin:checked~.list .prabin,
+#rahul:checked~.list .rahul,
+#aman:checked~.list .aman {
+    color: white;
+}
+
+.content .indicator {
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #7e7e7e;
+    border-radius: 12px;
+    transition: all 0.6s ease;
+}
+
+#prbal:checked~.list .indicator {
+    top: 0;
+}
+
+#prabin:checked~.list .indicator {
+    top: 80px;
+}
+
+#rahul:checked~.list .indicator {
+    top: 160px;
+}
+
+#aman:checked~.list .indicator {
+    top: 240px;
+}
+
+.upper input[type="radio"] {
+    display: none;
+}
+
+.upper .content .text-content {
+    width: 80%;
+    height: 100%;
+}
+
+.upper .content .text {
+    display: none;
+}
+
+.upper .text-content .prabal {
+    display: block;
+}
+
+#prabal:checked~.text-content .prabal,
+#prabin:checked~.text-content .prabin,
+#rahul:checked~.text-content .rahul,
+#aman:checked~.text-content .aman {
+    display: block;
+}
+
+#prabin:checked~.text-content .prabal,
+#rahul:checked~.text-content .prabal,
+#aman:checked~.text-content .prabal {
+    display: none;
+}
+
+.content .text-content .title {
+    font-size: 25px;
+    font-weight: 500;
+
+}
+
+.prabal img,
+.prabin img,
+.rahul img,
+.aman img {
+    margin-left: 70px;
+}
+
+.prabal .title,
+.prabin .title,
+.rahul .title,
+.aman .title {
+    margin-left: 70px;
+}
+
+
+
+
+
+/* end of vertical tab css  */
+
+
+
+
+/* css for container of mmap and form */
+.lower {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 130px;
+}
+
+/* end css */
+
+/* start of css of form  */
+.left {
+    background: rgb(244, 247, 249);
+    border-radius: 5px;
+    box-shadow: 4px 4px 2px rgb(94, 91, 93);
+    width: 100%;
+    margin-right: 5%;
+}
+
+.innerleft .h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.innerleft .input_field {
+    margin-bottom: 10px;
+    margin: 3%;
+}
+
+
+.innerleft .input_field input[type="text"],
+.innerleft .textarea {
+    border: 1px solid #ede9ec;
+    width: 100%;
+    padding: 10px;
+}
+
+.innerleft .textarea {
+    resize: none;
+    height: 80px;
+}
+
+.innerleft .button input[type="submit"] {
+    border: 0px;
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#error_message {
+    margin-bottom: 20px;
+    background: #e6222c;
+    padding: 0px;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+}
+
+/* end of form css  */
+
+.right .h2 {
+    margin-bottom: 10%;
+}
