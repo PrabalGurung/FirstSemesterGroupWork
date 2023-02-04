@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/shop.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <!-- Link for fonts -->
+    <link rel="stylesheet" href="../Font/fontawesome-free-6.2.1-web/css/all.css">
+
+    <!-- internalcss -->
+    <style>
+        button {
+            margin-top: 20px;
+        }
+
+        /* css for scroll to top button */
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: rgb(247, 167, 200);
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+
+    <div class="nav">
+        <div class="navbar">
+            <div class="box1">
+                <img src="../images/Icon/logo.png" alt="logo" class="navbar-logo">
+                <input type="text" name="" placeholder="Search">
+                <button>Search</button>
+                <div class="icon">
+                    <img style="height: 80px;" src="../images/icon/add to cart.png" alt="">
+                    <img height="80px" src="../images/Icon/sign in.png" alt="">
+                </div>
+            </div>
+            <div class="box2">
+                <ul>
+                    <li><a href="../home.html">Home</a></li>
+                    <li><a href="Shop2.html" class="active">Shop</a></li>
+                    <li><a href="Aboutus.html">About us</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="reference.html">Research</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End Header -->
+    <!-- featured -->
+    <div class="container">
+        <div class="toprow">
+            <div class="box">
+                <img src="../images/slider/slider4.png" width="1480px" height="250px"><br><br><br>
+                <h2 class="title">Best Selling Bonsai</h2>
+                <p>We offer one of the largest selection of bonsai tree species in Nepal.
+                    Browse from our collection of professionally trained bonsai trees.
+                    All bonsai trees are sent directly from our own nursery directly to you.</p><br><br><br>
+            </div>
+            <div class="top-seller">
+                <img src="../images/bonsai sell/Chinese-Bird-Plum-Bonsai.png">
+                <br><br>
+                <h3>Chinese Sweet Plum</h3><br>
+                <p>The sageretia is also called Chinese sweet plum or bird plum.
+                    It is a subtropical evergreen shrub which can grow 2 – 3 meters (7 to 10ft) high and is native to
+                    China and Japan.
+                    It is a popular indoor Bonsai.</p>
+                <button onclick="myFunction()">BUY</button>
+            </div>
+            <div class="top-seller">
+                <img src="../images/bonsai sell/azlea.png">
+                <br><br>
+                <h3>Azalea</h3><br>
+                <p>The Azalea is popular for its spectacular flowers, which bloom in Spring, comes in many different
+                    colors, shapes, sizes and patterns. For an Azalea to flower abundantly you need to time your pruning
+                    and fertilizing.</p>
+                <button onclick="myFunction()">BUY</button>
+            </div>
+            <div class="top-seller">
+                <img src="../images/bonsai sell/japanese Maple.png">
+                <br><br>
+                <h3>japanese Maple</h3><br>
+                <p>Japanese maples are the most dazzling trees for bonsai and are widely popular thanks to their
+                    brilliantly colored fall foliage. These compact trees offer a moderate growth habit that
+                    slows with age.</p>
+                <button onclick="myFunction()">BUY</button>
+            </div>
+            <div class="top-seller">
+                <img src="../images/bonsai sell/Satsuki-Azalea.png">
+                <br><br>
+                <h3>Satsuki-Azalea</h3><br>
+                <p>Azalea bonsai trees thrive best in outdoor conditions. However, they can be kept indoors if cared
+                    for properly. During the winter, trees can be overwintered to protect from freezing and leaf
+                    yellowing.</p>
+                <button onclick="myFunction()">BUY</button>
+            </div>
+        </div><br><br><br>
+        <!-- end featured -->
+        <!-- Shop -->
+        <div class="row row-2">
+            <h2 class="title">Our Products</h2>
+        </div>
+        <div class="subcontainer">
+            <div class="sidebar">
+                <img src="../images/slider/hori 1.png" alt="">
+            </div>
+            <div class="rightbar">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="../images/bonsai sell/adenium.png">
+                        <h4>Adenium</h4>
+                        <img src="../images/Icon/four and half.png" style="height: 15px; ; width: 70px;">
+                        <pre>Rs.2500                <button onclick="myFunction()">BUY</button></pre>
+                    </div>
+                    <div class="col-4">
+                        <img src="../images/bonsai sell/applebonsai.png">
+                        <h4>Apple Bonsai</h4>
+                        <img src="../images/Icon/five star.png" style="height: 15px; ; width: 70px;">
+                        <pre><del>Rs.3000</del> Rs.2550       <button onclick="myFunction()">BUY</button></pre>
+                    </div>
+                    <div class="col-4">
+                        <img src="../images/bonsai sell/azlea.png">
+                        <h4>Azlea</h4>
+                        <img src="../images/Icon/four and half.png" style="height: 15px; ; width: 70px;">
+                        <pre>Rs.5500               <button onclick="myFunction()">BUY</button></pre>
+                    </div>
+                    <div class="col-4">
+                        <img src="../images/bonsai sell/baldcypress.png">
+                        <h4>Bald Cypress</h4>
+                        <img src="../images/Icon/three and half.png" style="height: 15px; ; width: 70px;">
+                        <pre>Rs.5500               <button onclick="myFunction()">BUY</button></pre>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="../images/bonsai sell/Banksia.png">
+                        <h4>Banksia</h4>
+                        <img src="../images/Icon/three star.png" style="height: 15px; ; width: 70px;">
+                        <pre>Rs.5500               <button onclick="myFunction()">BUY</button></pre>
+                    </div>
+                    <div class="col-4">
+                        <img src="../images/bonsai sell/baobab.png">
+                        <h4>Baobab</h4>
+                        <img src="../images/Icon/five star.png" style="height: 15px; ; width: 70px;">
+                        <pre><del>Rs.1860</del> Rs.1618       <button onclick="myFunction()">BUY</button></pre>
+                    </div>
+                    <div class="col-4">
+                        <img src="../images/bonsai sell/Bay-Leaf-Bonsai-1.png">
+                        <h4>Bay Leaf Bonsai</h4>
+                        <img src="../images/Icon/three star.png" style="height: 15px; ; width: 70px;">
+                        <pre>Rs.4000               <button onclick="myFunction()">BUY</button></pre>
+                    </div>
+                    <div class="col-4">
+                        <img src="../images/bonsai sell/Birch.png">
+                        <h4>Birch</h4>
+                        <img src="../images/Icon/four and half.png" style="height: 15px; ; width: 70px;">
+                        <pre>Rs.3540               <button onclick="myFunction()">BUY</button></pre>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="../images/bonsai sell/bodhi_tree-removebg-preview.png">
+                        <h4>Bodhi Tree</h4>
+                        <img src="../images/Icon/four and half.png" style="height: 15px; ; width: 70px;">
+                        <pre>Rs.2600               <button onclick="myFunction()">BUY</button></pre>
+                    </div>
+                    <div class="col-4">
+                        <img src="../images/bonsai sell/bougainvillea-removebg-preview.png">
+                        <h4>Bougainvillea</h4>
+                        <img src="../images/Icon/five star.png" style="height: 15px; ; width: 70px;">
+                        <pre>Rs.1250               <button onclick="myFunction()">BUY</button></pre>
+                    </div>
+                    <div class="col-4">
+                        <img src="../images/bonsai sell/Boxwood.png">
+                        <h4>Boxwood</h4>
+                        <img src="../images/Icon/five star.png" style="height: 15px; ; width: 70px;">
+                        <pre>Rs.4800               <button onclick="myFunction()">BUY</button></pre>
+                    </div>
+                    <div class="col-4">
+                        <img src="../images/bonsai sell/Brazilian Rain Tree.png">
+                        <h4>Brazillian Rain Tree</h4>
+                        <img src="../images/Icon/three star.png" style="height: 15px; ; width: 70px;">
+                        <pre>Rs.2400               <button onclick="myFunction()">BUY</button></pre>
+                    </div>
+                </div>
+                <div class="page_button">
+                    <span>1</span>
+                    <span><a href="#">2</a></span>
+                    <span>&#8594</span>
+                </div>
+            </div>
+        </div>
+        <div class="comment-section">
+            <h2 class="title">Comments</h2>
+            <div class="comment-row">
+                <div class="comment-column">
+                    <div class="user">
+                        <img src="../images/profile/love.jpg">
+                        <div class="user-info">
+                            <h5>Neko-san</h5>
+                            <small>@nekosan</small>
+                        </div>
+                    </div>
+                    nya nya nya nanan nya yay anya nya!!nya nya nya nanan nya yay anya nya!!
+                    nya nya nya nanan nya yay anya nya!! nya nya nya nanan nya yay anya nya!!
+                    nya nya nya nanan nya yay anya nya!! nya nya nya nanan nya yay anya nya!!
+                    nya nya nya nanan nya yay anya nya!! nya nya nya nanan nya yay anya nya!!
+                    nya nya nya nanan nya yay anya nya!! nya nya nya nanan nya yay anya nya!!
+                </div>
+                <div class="comment-column">
+                    <div class="user">
+                        <img src="../images/profile/mqdefault.jpg">
+                        <div class="user-info">
+                            <h5>Nyan-pasu</h5>
+                            <small>@sindekurasai</small>
+                        </div>
+                    </div>
+                    sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!
+                    sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!
+                    sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!
+                    sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!
+                </div>
+                <div class="comment-column">
+                    <div class="user">
+                        <img src="../images/profile/pet.png">
+                        <div class="user-info">
+                            <h5>Neko-san</h5>
+                            <small>@nekosan</small>
+                        </div>
+                    </div>
+                    nya nya nya nanan nya yay anya nya!!nya nya nya nanan nya yay anya nya!!
+                    nya nya nya nanan nya yay anya nya!! nya nya nya nanan nya yay anya nya!!
+                    nya nya nya nanan nya yay anya nya!! nya nya nya nanan nya yay anya nya!!
+                    nya nya nya nanan nya yay anya nya!! nya nya nya nanan nya yay anya nya!!
+                    nya nya nya nanan nya yay anya nya!! nya nya nya nanan nya yay anya nya!!
+                </div>
+            </div>
+            <div class="commentbox">
+                <div class="user">
+                    <img src="../images/profile/loaf.jpg" alt="">
+                    <div class="user-info">
+                        <h5>Unanimous</h5>
+                        <small>@unanimous</small>
+                    </div>
+                </div>
+                <form action="" method="post">
+                    <textarea name="comment" placeholder="Please leave a message!!"></textarea>
+                    <button class="commentsubmit">comment</button>
+                </form>
+            </div>
+        </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    </div><br><br><br><br>
+    <!-- End Shop -->
+    <footer>
+
+        <div class="footer-content">
+            <h3>Basket bonzai </h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo iste corrupti doloribus odio sed!</p>
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/profile.php?id=100070105813165" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2023. designed by <span>Rahul</span></p>
+        </div>
+    </footer>
+    <script>
+        function myFunction() {
+            alert("Thank you for buying :)");
+        }
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down  from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+
+    </script>
+</body>
+
+</html>

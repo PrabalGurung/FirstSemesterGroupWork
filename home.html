@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Home</title>
+    <!-- These are the links to css sheets for home page -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!-- Link for fonts -->
+    <link rel="stylesheet" href="Font/fontawesome-free-6.2.1-web/css/all.css">
+    <!-- Internal CSS -->
+
+    <style>
+        /* css for scroll to top button */
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: rgb(247, 167, 200);
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="first">
+        <div class="row">
+            <div class="col">
+                <h1>BLOOM</h1>
+                <p>
+                    Everyone Blooms, Some blooms early while some bloom slowly. Bonsai that defines you.
+                </p>
+                <!-- Explore button which on double click takes you to home page -->
+                <button id="toggleBtn" style="cursor: pointer;">EXPLORE</button>
+            </div>
+            <div class="col">
+                <div class="card card1">
+                </div>
+
+                <div class="card card2">
+
+                </div>
+                <div class="card card3">
+
+                </div>
+                <div class="card card4">
+
+                </div>
+                <div class="card card5">
+
+                </div>
+                <div class="card card6">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="second">
+        <div class="nav">
+            <!-- HTML for navigation bar -->
+            <div class="navbar">
+                <div class="box1">
+                    <img src="images/Icon/logo.png" alt="logo" class="navbar-logo">
+                    <input type="text" name="" placeholder="Search">
+                    <button>Search</button>
+                    <div class="icon">
+                        <img height="80px" src="images/Icon/add to cart.png" alt="">
+                        <img height="80px" src="images/Icon/sign in.png" alt="">
+                    </div>
+                </div>
+                <div class="box2">
+                    <ul>
+                        <!-- Internal link to other pages on the navbar  -->
+                        <li><a href="home.html" class="active">Home</a></li>
+                        <li><a href="html/Shop2.html">Shop</a></li>
+                        <li><a href="html/Aboutus.html">About us</a></li>
+                        <li><a href="html/Blog.html">Blog</a></li>
+                        <li><a href="html/reference.html">Research</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div>
+            <!-- CSS first Box -->
+            <div class="second">
+                <h2>Our Products</h2><br><br>
+                <div class="fetured-product">
+                    <div class="top-seller">
+                        <img src="images/bonsai sell/Chinese-Bird-Plum-Bonsai.png">
+                        <div class="overlay">
+                            <br><br>
+                            <h3>Chinese Sweet Plum</h3><br>
+                            <p>The sageretia is also called Chinese sweet plum or bird plum.
+                                It is a subtropical evergreen shrub which can grow 2 – 3 meters (7 to 10ft) high and is
+                                native to China and Japan.
+                                It is a popular indoor Bonsai.</p>
+                            <button onclick="myFunction()">BUY</button>
+                        </div>
+                    </div>
+                    <div class="top-seller">
+                        <img src="images/bonsai sell/azlea.png">
+                        <div class="overlay">
+                            <br><br>
+                            <h3>Azalea</h3><br>
+                            <p>The Azalea is popular for its spectacular flowers, which bloom in Spring, comes in many
+                                different
+                                colors, shapes, sizes and patterns. For an Azalea to flower abundantly you need to time
+                                your pruning and fertilizing.<br></p>
+                            <button onclick="myFunction()">BUY</button>
+                        </div>
+                    </div>
+                    <div class="top-seller">
+                        <img src="images/bonsai sell/japanese Maple.png">
+                        <div class="overlay">
+                            <br><br>
+                            <h3>japanese Maple</h3><br>
+                            <p>Japanese maples are the most dazzling trees for bonsai and are widely popular thanks to
+                                their
+                                brilliantly colored fall foliage. These compact trees offer a moderate growth habit that
+                                slows with age.<br></p>
+                            <button onclick="myFunction()">BUY</button>
+                        </div>
+                    </div>
+                    <div class="top-seller">
+                        <img src="images/bonsai sell/Satsuki-Azalea.png">
+                        <div class="overlay">
+                            <br><br>
+                            <h3>Satsuki-Azalea</h3><br>
+                            <p>Azalea bonsai trees thrive best in outdoor conditions. However, they can be kept indoors
+                                if cared
+                                for properly. During the winter, trees can be overwintered to protect from freezing and
+                                leaf yellowing.<br></p>
+                            <button onclick="myFunction()">BUY</button>
+                        </div>
+                    </div>
+                </div>
+                <pre><button style="margin-top: 60px; margin-left: 1250px; width: 100px; height: 35px; color: #fffffe; font-size: 12px 0;
+         background-color: #0e172c; border: 0; border-radius: 20px;">Shop More</button>---------></pre>
+            </div>
+            <!-- Slider in home page  -->
+            <div class="box">
+                <img src="images/slider/slider4.png" alt="slides" id="slide">
+                <!-- JavaScript for slider  -->
+                <script>
+                    function second() {
+                        document.getElementById("slide").src = "images/slider/slider4.png";
+                    } function third() {
+                        document.getElementById("slide").src = "images/slider/slider2.png";
+                    } function first() {
+                        document.getElementById("slide").src = "images/slider/slider3.png";
+                    } setInterval(first, 2000);
+                    setInterval(second, 4000); setInterval(third, 6000); 
+                </script>
+            </div>
+            <div class="third">
+                <div class="third-left">
+                </div>
+                <div class="third-right">
+                    <h3>About Us</h3><br>
+                    <p>
+                        Welcome to Bonsai Basket where we offer you one of the largest selection of bonsai trees. Browse
+                        from our vast collection of
+                        professionally cultivated bonsai trees at the best price available all over the market. Get
+                        endulged in the fascinating art of
+                        bonsai cultivation with the help of our experts in Bonsai Basket. Now, decorate your home in a
+                        new way that honors the serenity
+                        of the bonsai. <br><br>
+                    </p>
+                    <p>Bonsai Basket is an community built by enthusiasts and experts from around the whole Nepal.
+                        This is the only place where we introduce you to the fascinating and living art of Bonsai, and
+                        help you get started.
+                        We take pride in having excellent quality of product and resources to make sure you have the
+                        best of what we call the art of bonsai.
+                        Furthermore, we ensure to provide you with utmost support you need to create a booming
+                        environment of these old, wise trees that remind
+                        you of the wisdom of the nature.
+                        Furthermore, we ensure to provide you with utmost support you need to create a booming
+                        environment of these old, wise trees that remind
+                        you of the wisdom of the nature.</p>
+                </div>
+            </div>
+            <div id="feature">
+                <div class="title-text">
+                    <h2>Why Choose Us</h2>
+                </div>
+                <div class="feature-box">
+                    <div class="features">
+                        <h2>Experienced Staff</h2>
+                        <div class="features-description">
+                            <div class="feature-logo">
+                                <img src="images/Icon/experience.png">
+                            </div>
+                            <div class="feature-text">
+                                <p>We have one most Experienced group have people with over 10 years of Experience.</p>
+                            </div>
+                        </div>
+                        <h2>High Quality Bonsai</h2>
+                        <div class="features-description">
+                            <div class="feature-logo">
+                                <img src="images/Icon/best quality.png">
+                            </div>
+                            <div class="feature-text">
+                                <p>Our bonsai was imported from different country and was inherited within the care of
+                                    Experienced master.</p>
+                            </div>
+                        </div>
+                        <h2>Affordable Cost</h2>
+                        <div class="features-description">
+                            <div class="feature-logo">
+                                <img src="images/Icon/affordable cost.png">
+                            </div>
+                            <div class="feature-text">
+                                <p>Our bonsai grows within the country which makes it cost-effective.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features-img">
+                        <img src="images/picture/grandpa bonsai.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- A division for testimonals  -->
+            <div class="comment-section">
+                <h2 class="review-text">Testimonial</h2>
+                <div class="comment-row">
+                    <div class="comment-column">
+                        <div class="user">
+                            <img src="images/profile/love.jpg">
+                            <div class="user-info">
+                                <h5>Neko-san</h5>
+                                <small>@nekosan</small>
+                            </div>
+                        </div>
+                        nya nya nya nanan nya yay anya nya!!nya nya nya nanan nya yay anya nya!!
+                        nya nya nya nanan nya yay anya nya!! nya nya nya nanan nya yay anya nya!!
+                        nya nya nya nanan nya yay anya nya!! nya nya nya nanan nya yay anya nya!!
+                        nya nya nya nanan nya yay anya nya!! nya nya nya nanan nya yay anya nya!!
+                        nya nya nya nanan nya yay anya nya!! nya nya nya nanan nya yay anya nya!!
+                    </div>
+                    <div class="comment-column">
+                        <div class="user">
+                            <img src="images/profile/mqdefault.jpg">
+                            <div class="user-info">
+                                <h5>Nyan-pasu</h5>
+                                <small>@sindekurasai</small>
+                            </div>
+                        </div>
+                        sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!
+                        sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!
+                        sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!
+                        sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!sine!!
+                    </div>
+                    <div class="comment-column">
+                        <div class="user">
+                            <img src="images/profile/unani.jpg">
+                            <div class="user-info">
+                                <h5>Neko-san</h5>
+                                <small>@nekosan</small>
+                            </div>
+                        </div>
+                        nya nya nya nanan nya yay anya nya!!nya nya nya nanan nya yay anya nya!!
+                        nya nya nya nanan nya yay anya nya!! nya nya nya nanan nya yay anya nya!!
+                        nya nya nya nanan nya yay anya nya!! nya nya nya nanan nya yay anya nya!!
+                        nya nya nya nanan nya yay anya nya!! nya nya nya nanan nya yay anya nya!!
+                        nya nya nya nanan nya yay anya nya!! nya nya nya nanan nya yay anya nya!!
+                    </div>
+                </div>
+            </div>
+            <div class="last">
+                <div class="heading2">
+                    <h3>Contact Us</h3>
+                </div>
+                <div class="wrapper">
+                    <!-- Feedback form using form tag -->
+                    <div class="feedback">
+                        <h2>Feedback Form</h2>
+                        <!-- This shows the error message when the form is submitted with invalid input -->
+                        <div id="error_message"></div>
+
+                        <form id="myform" onsubmit="return validate();">
+                            <div class="input_field">
+                                <input type="text" placeholder="Name" id="name">
+                            </div>
+                            <div class="input_field">
+                                <input type="text" placeholder="Phone" id="phone">
+                            </div>
+                            <div class="input_field">
+                                <input type="text" placeholder="Email" id="email">
+                            </div>
+                            <div class="input_field">
+                                <textarea placeholder="Leave us with your feedback." id="message" rows="13"></textarea>
+                            </div>
+                            <div class="button">
+                                <input type="submit" value="Submit">
+                            </div>
+                        </form>
+                    </div>
+                    <!-- HTML for map  -->
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                                src="https://maps.google.com/maps?width=600&amp;height=500&amp;hl=en&amp;q=informatics college pokhara&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                            </iframe><a href="https://www.gachacute.com/">Download</a>
+                        </div>
+                        <style>
+                            .mapouter {
+                                position: relative;
+                                text-align: right;
+                                width: 600px;
+                                height: 500px;
+                            }
+
+                            .gmap_canvas {
+                                overflow: hidden;
+                                background: none !important;
+                                width: 600px;
+                                height: 500px;
+                            }
+
+                            .gmap_iframe {
+                                width: 600px !important;
+                                height: 500px !important;
+                            }
+                        </style>
+                    </div>
+                </div>
+            </div>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        </div>
+        <footer>
+            <!-- Footer section -->
+            <div class="footer-content">
+                <h3>Bonzai </h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo iste corrupti doloribus odio sed!</p>
+                <ul class="socials">
+                    <li><a href="https://www.facebook.com/profile.php?id=100070105813165" target="_blank"><i
+                                class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2023. designed by <span>Rahul</span></p>
+            </div>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+    <script>
+        function myFunction() {
+            alert("Thank you for buying :)");
+        }
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down  from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+
+    </script>
+    <!-- <script>
+    document.querySelector("#first").addEventListener("click", function(){
+        document.querySelector("#second").style.display="block";
+        document.querySelector("#first").style.display="none";
+    });
+</script> -->
+</body>
+
+</html>
